@@ -39,12 +39,6 @@ npm run dev
 ```
 Then open the local URL shown in your terminal (typically `http://localhost:5173`).
 
-## 5) Build for production
-```bash
-npm run build
-```
-The build output will be in `dist/`.
-
 ## Features
 - Modern, dark neon UI for the interview screen
 - Two-party layout (You vs. AI Assistant)
