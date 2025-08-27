@@ -1,12 +1,55 @@
-# React + Vite
+# AI Interview Platform - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend for the AI Interview Platform built with Vite + React. The frontend is currently standalone (not connected to the backend) and integrates with Vapi Web SDK to run an interview-like voice experience.
 
-Currently, two official plugins are available:
+## Prerequisites
+- Node.js 18+ and npm
+- A Vapi Web SDK public API key
+- A Vapi Assistant ID
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 1) Clone the repository
+```bash
+git clone <your-repo-url>
+cd aiInterviewPlatform/frontend
+```
 
-## Expanding the ESLint configuration
+## 2) Install dependencies
+```bash
+npm install
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 3) Configure environment variables
+Copy the example env file and fill in your values:
+```bash
+cp .env.example .env
+```
+Set the following values in `.env`:
+- `VITE_VAPI_API_KEY` — your Vapi Web SDK public key
+- `VITE_VAPI_ASSISTANT_ID` — your Vapi Assistant ID
+
+Example `.env`:
+```env
+VITE_VAPI_API_KEY=pk_live_xxxxxxxxxxxxxxxxx
+VITE_VAPI_ASSISTANT_ID=asst_xxxxxxxxxxxxxxxxx
+```
+
+## 4) Run the app (development)
+```bash
+npm run dev
+```
+Then open the local URL shown in your terminal (typically `http://localhost:5173`).
+
+## 5) Build for production
+```bash
+npm run build
+```
+The build output will be in `dist/`.
+
+## Features
+- Modern, dark neon UI for the interview screen
+- Two-party layout (You vs. AI Assistant)
+- Live transcript panel
+
+## Notes
+- The backend is not required for local usage of the voice interview demo. The form is currently local-only and does not submit to the backend.
+- Ensure your browser allows microphone access.
