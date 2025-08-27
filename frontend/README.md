@@ -9,7 +9,7 @@ This is the frontend for the AI Interview Platform built with Vite + React. The 
 
 ## 1) Clone the repository
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/hariThorve/aiInterviewer.git
 cd aiInterviewPlatform/frontend
 ```
 
