@@ -49,7 +49,7 @@ Provide overall feedback summarizing strengths and areas for improvement.
 `;
 
   const model = new ChatGroq({
-    apiKey: import.meta.env.GROQ_API_KEY,
+    apiKey: import.meta.env.VITE_GROQ_API,
     model: "llama-3.3-70b-versatile",
     temperature: 0,
   });
